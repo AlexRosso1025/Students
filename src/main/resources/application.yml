@@ -1,0 +1,18 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /students
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    platform: postgres
+    url: jdbc:postgresql://ec2-174-129-255-35.compute-1.amazonaws.com:5432/d1iilj7835liu9
+    username: auubojkwunynfv
+    password: 4b81be6a4084f555a1114cf9c2627a0a3ff8c9f7648f6830c3c387dd21d520bc
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+logging:
+  level:
+    org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: WARN
